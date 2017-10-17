@@ -10,9 +10,15 @@
 
 @implementation SCGLKViewController
 
+- (void) viewDidLoad
+{
+    [super viewDidLoad];
+    NSLog(@"View loaded");
+}
+
 - (void) glkViewControllerUpdate:(GLKViewController *)controller
 {
-    // Do nothing, we're only going to clear to see if we animate
+    NSLog(@"Controller update gets called");
 }
 
 - (void) glkView:(GLKView *)view drawInRect:(CGRect)rect
