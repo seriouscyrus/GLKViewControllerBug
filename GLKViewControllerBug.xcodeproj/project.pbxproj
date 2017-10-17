@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		6E97BFCB1F9631B300AC15AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E97BFCA1F9631B300AC15AF /* AppDelegate.m */; };
-		6E97BFCE1F9631B300AC15AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E97BFCD1F9631B300AC15AF /* ViewController.m */; };
 		6E97BFD11F9631B300AC15AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E97BFCF1F9631B300AC15AF /* Main.storyboard */; };
 		6E97BFD31F9631B300AC15AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E97BFD21F9631B300AC15AF /* Assets.xcassets */; };
 		6E97BFD61F9631B300AC15AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E97BFD41F9631B300AC15AF /* LaunchScreen.storyboard */; };
 		6E97BFD91F9631B300AC15AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E97BFD81F9631B300AC15AF /* main.m */; };
 		6E97BFE31F9631B300AC15AF /* GLKViewControllerBugTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E97BFE21F9631B300AC15AF /* GLKViewControllerBugTests.m */; };
 		6E97BFEE1F9631B300AC15AF /* GLKViewControllerBugUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E97BFED1F9631B300AC15AF /* GLKViewControllerBugUITests.m */; };
+		6E97C0001F96332100AC15AF /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E97BFFC1F96323900AC15AF /* GLKit.framework */; };
+		6E97C0031F96333F00AC15AF /* SCGLKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E97C0021F96333F00AC15AF /* SCGLKViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +39,6 @@
 		6E97BFC61F9631B300AC15AF /* GLKViewControllerBug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLKViewControllerBug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E97BFC91F9631B300AC15AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6E97BFCA1F9631B300AC15AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6E97BFCC1F9631B300AC15AF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6E97BFCD1F9631B300AC15AF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6E97BFD01F9631B300AC15AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E97BFD21F9631B300AC15AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E97BFD51F9631B300AC15AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +50,9 @@
 		6E97BFE91F9631B300AC15AF /* GLKViewControllerBugUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GLKViewControllerBugUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E97BFED1F9631B300AC15AF /* GLKViewControllerBugUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLKViewControllerBugUITests.m; sourceTree = "<group>"; };
 		6E97BFEF1F9631B300AC15AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E97BFFC1F96323900AC15AF /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		6E97C0011F96333F00AC15AF /* SCGLKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCGLKViewController.h; sourceTree = "<group>"; };
+		6E97C0021F96333F00AC15AF /* SCGLKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCGLKViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E97C0001F96332100AC15AF /* GLKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +84,13 @@
 		6E97BFBD1F9631B300AC15AF = {
 			isa = PBXGroup;
 			children = (
+				6E97C0011F96333F00AC15AF /* SCGLKViewController.h */,
+				6E97C0021F96333F00AC15AF /* SCGLKViewController.m */,
 				6E97BFC81F9631B300AC15AF /* GLKViewControllerBug */,
 				6E97BFE11F9631B300AC15AF /* GLKViewControllerBugTests */,
 				6E97BFEC1F9631B300AC15AF /* GLKViewControllerBugUITests */,
 				6E97BFC71F9631B300AC15AF /* Products */,
+				6E97BFFB1F96323900AC15AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,8 +109,6 @@
 			children = (
 				6E97BFC91F9631B300AC15AF /* AppDelegate.h */,
 				6E97BFCA1F9631B300AC15AF /* AppDelegate.m */,
-				6E97BFCC1F9631B300AC15AF /* ViewController.h */,
-				6E97BFCD1F9631B300AC15AF /* ViewController.m */,
 				6E97BFCF1F9631B300AC15AF /* Main.storyboard */,
 				6E97BFD21F9631B300AC15AF /* Assets.xcassets */,
 				6E97BFD41F9631B300AC15AF /* LaunchScreen.storyboard */,
@@ -130,6 +134,14 @@
 				6E97BFEF1F9631B300AC15AF /* Info.plist */,
 			);
 			path = GLKViewControllerBugUITests;
+			sourceTree = "<group>";
+		};
+		6E97BFFB1F96323900AC15AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E97BFFC1F96323900AC15AF /* GLKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +277,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E97BFCE1F9631B300AC15AF /* ViewController.m in Sources */,
 				6E97BFD91F9631B300AC15AF /* main.m in Sources */,
+				6E97C0031F96333F00AC15AF /* SCGLKViewController.m in Sources */,
 				6E97BFCB1F9631B300AC15AF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

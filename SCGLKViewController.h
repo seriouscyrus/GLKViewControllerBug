@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SCGLKViewController.h
 //  GLKViewControllerBug
 //
 //  Created by George Brown on 17.10.17.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GLKit/GLKit.h>
 
-@interface ViewController : UIViewController
-
+@interface SCGLKViewController : GLKViewController <GLKViewControllerDelegate>
 
 @end
-
