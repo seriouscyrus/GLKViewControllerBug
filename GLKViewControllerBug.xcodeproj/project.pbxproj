@@ -16,6 +16,7 @@
 		6E97BFEE1F9631B300AC15AF /* GLKViewControllerBugUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E97BFED1F9631B300AC15AF /* GLKViewControllerBugUITests.m */; };
 		6E97C0001F96332100AC15AF /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E97BFFC1F96323900AC15AF /* GLKit.framework */; };
 		6E97C0031F96333F00AC15AF /* SCGLKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E97C0021F96333F00AC15AF /* SCGLKViewController.m */; };
+		6EC5F4B71F98F3DD00660B25 /* SCGLKView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC5F4B61F98F3DD00660B25 /* SCGLKView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		6E97BFFC1F96323900AC15AF /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		6E97C0011F96333F00AC15AF /* SCGLKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCGLKViewController.h; sourceTree = "<group>"; };
 		6E97C0021F96333F00AC15AF /* SCGLKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCGLKViewController.m; sourceTree = "<group>"; };
+		6EC5F4B51F98F3DD00660B25 /* SCGLKView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCGLKView.h; sourceTree = "<group>"; };
+		6EC5F4B61F98F3DD00660B25 /* SCGLKView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCGLKView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +87,6 @@
 		6E97BFBD1F9631B300AC15AF = {
 			isa = PBXGroup;
 			children = (
-				6E97C0011F96333F00AC15AF /* SCGLKViewController.h */,
-				6E97C0021F96333F00AC15AF /* SCGLKViewController.m */,
 				6E97BFC81F9631B300AC15AF /* GLKViewControllerBug */,
 				6E97BFE11F9631B300AC15AF /* GLKViewControllerBugTests */,
 				6E97BFEC1F9631B300AC15AF /* GLKViewControllerBugUITests */,
@@ -107,6 +108,10 @@
 		6E97BFC81F9631B300AC15AF /* GLKViewControllerBug */ = {
 			isa = PBXGroup;
 			children = (
+				6E97C0011F96333F00AC15AF /* SCGLKViewController.h */,
+				6E97C0021F96333F00AC15AF /* SCGLKViewController.m */,
+				6EC5F4B51F98F3DD00660B25 /* SCGLKView.h */,
+				6EC5F4B61F98F3DD00660B25 /* SCGLKView.m */,
 				6E97BFC91F9631B300AC15AF /* AppDelegate.h */,
 				6E97BFCA1F9631B300AC15AF /* AppDelegate.m */,
 				6E97BFCF1F9631B300AC15AF /* Main.storyboard */,
@@ -278,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E97BFD91F9631B300AC15AF /* main.m in Sources */,
+				6EC5F4B71F98F3DD00660B25 /* SCGLKView.m in Sources */,
 				6E97C0031F96333F00AC15AF /* SCGLKViewController.m in Sources */,
 				6E97BFCB1F9631B300AC15AF /* AppDelegate.m in Sources */,
 			);
